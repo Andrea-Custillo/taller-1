@@ -1,4 +1,4 @@
-package py.edu.ucom.AndreaC.entities;
+package py.edu.ucom.AndreaC.entities.parcial;
 
 
 public class clientes {

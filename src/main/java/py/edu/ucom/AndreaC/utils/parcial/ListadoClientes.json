@@ -2,20 +2,20 @@
     {
         "documento":"1234568",
         "nombre":"Ana Martínez"
-     },
-     {
+   },
+
+   {
         "documento":"1234567",
         "nombre":"Juan López"
- },
+   },
 
-
-
-     {
+   {
         "documento":"7654321",
         "nombre":"Carlos Soto"
-     },
-     {
+   },
+   
+   {
         "documento":"8654321",
         "nombre":"Lorena Ruiz"
-     }
+   }
 ]

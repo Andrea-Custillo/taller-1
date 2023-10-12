@@ -1,10 +1,9 @@
-package py.edu.ucom.AndreaC.controllers;
+package py.edu.ucom.AndreaC.controllers.clase3;
+
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-
-
 
 import java.util.HashMap;
 import java.util.Date;
@@ -12,10 +11,8 @@ import java.util.Date;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
 
-
-
 @Path("/clase-3")
-public class ListasYMapsResource {
+public class ListasYMapsResourceResource {
 
     @GET
     public List<Integer> getLista(){
@@ -87,3 +84,6 @@ public class ListasYMapsResource {
                  }
             
            */
+    
+
+
