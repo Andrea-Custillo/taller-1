@@ -3,25 +3,31 @@ package py.edu.ucom.AndreaC.services;
 import java.util.List;
 
 import org.jboss.logging.Logger;
-import org.springframework.data.domain.Example;
-import org.springframework.data.domain.ExampleMatcher;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Sort;
 
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import py.edu.ucom.AndreaC.config.IDAO;
-import py.edu.ucom.AndreaC.entities.proyecto.MetodoPago;
+import py.edu.ucom.AndreaC.entities.MetodoPago;
 import py.edu.ucom.AndreaC.repositories.MetodoPagoRepository;
+
+
+
 
 
 @ApplicationScoped
 
 public class MetodoPagoService implements IDAO<MetodoPago, Integer>{
 
+    /**
+     *
+     */
     private static final Logger LOG = Logger.getLogger(MetodoPagoService.class);
+
+    public static Logger getLog() {
+        return LOG;
+    }
 
     @Inject
     private MetodoPagoRepository repository;
@@ -57,6 +63,10 @@ public class MetodoPagoService implements IDAO<MetodoPago, Integer>{
         return this.repository.findAll();
     }
 
+    /**
+     * @param cod
+     * @return
+     */
     public List<MetodoPago> buscarPorCodigo(String cod) {
         return this.repository.findByCodigo(cod);
     }
@@ -75,5 +85,8 @@ public class MetodoPagoService implements IDAO<MetodoPago, Integer>{
     }
 
 }
+
+
     
+
 

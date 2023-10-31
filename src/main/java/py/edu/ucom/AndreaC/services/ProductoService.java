@@ -6,7 +6,7 @@ import java.util.List;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import py.edu.ucom.AndreaC.config.IDAO;
-import py.edu.ucom.AndreaC.entities.proyecto.Producto;
+import py.edu.ucom.AndreaC.entities.Producto;
 import py.edu.ucom.AndreaC.repositories.ProductoRepository;
 
 
@@ -47,6 +47,7 @@ public class ProductoService implements IDAO<Producto,Integer> {
     public List<Producto> listar() {
         return this.repository.findAll();
     }
+    
     
 }
     

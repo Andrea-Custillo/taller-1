@@ -10,10 +10,10 @@ import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import jakarta.transaction.Transactional;
 import py.edu.ucom.AndreaC.config.IDAO;
-import py.edu.ucom.AndreaC.entities.proyecto.Cliente;
-import py.edu.ucom.AndreaC.entities.proyecto.Venta;
-import py.edu.ucom.AndreaC.entities.proyecto.VentaDetalle;
-import py.edu.ucom.AndreaC.entities.proyecto.dto.ResumenVentaDTO;
+import py.edu.ucom.AndreaC.entities.Cliente;
+import py.edu.ucom.AndreaC.entities.Venta;
+import py.edu.ucom.AndreaC.entities.VentaDetalle;
+import py.edu.ucom.AndreaC.entities.dto.ResumenVentaDTO;
 import py.edu.ucom.AndreaC.entities.dto.VentaDetalleDTO;
 import py.edu.ucom.AndreaC.repositories.VentaDetalleRepository;
 import py.edu.ucom.AndreaC.repositories.VentaRepository;
@@ -21,6 +21,9 @@ import py.edu.ucom.AndreaC.repositories.VentaRepository;
 @ApplicationScoped
 
 public class VentaService implements IDAO<Venta,Integer> {
+
+
+    
 
 
     private static final Logger LOG = Logger.getLogger(VentaService.class);
