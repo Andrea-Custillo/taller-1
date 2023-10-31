@@ -109,8 +109,12 @@ public class VentaService implements IDAO<Venta,Integer> {
         data.setDetalle( detalle);
 
         return data;
+
+
+
     }
-    
-}
+
+   }
+
     
 

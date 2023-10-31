@@ -2,9 +2,7 @@ package py.edu.ucom.AndreaC.services;
 
 
 import java.util.List;
-
 import org.jboss.logging.Logger;
-
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import py.edu.ucom.AndreaC.config.IDAO;

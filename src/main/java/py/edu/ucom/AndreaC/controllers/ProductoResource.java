@@ -43,6 +43,12 @@ public class ProductoResource {
         return this.service.obtener(param);     
     }
 
+       @GET
+    @Path("{id}")
+    public Producto stockProducto(@PathParam("id")Integer param){
+        return this.service.obtener(param);     
+    }
+
 
     
 }

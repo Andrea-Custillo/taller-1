@@ -43,6 +43,14 @@ public class ProductoService implements IDAO<Producto,Integer> {
         this.repository.deleteById(param);
     }
 
+        @Override
+    public void stockProducto(Integer param) {
+        // TODO Auto-generated method stub
+
+        this.repository.deleteById(param);
+    }
+
+    
     @Override
     public List<Producto> listar() {
         return this.repository.findAll();

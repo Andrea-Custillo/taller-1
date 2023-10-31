@@ -10,6 +10,7 @@ import jakarta.ws.rs.POST;
 import jakarta.ws.rs.PUT;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.PathParam;
+import py.edu.ucom.AndreaC.entities.Cliente;
 import py.edu.ucom.AndreaC.entities.Venta;
 import py.edu.ucom.AndreaC.entities.dto.ResumenVentaDTO;
 import py.edu.ucom.AndreaC.services.VentaService;
@@ -49,6 +50,20 @@ public class VentaResource {
     public ResumenVentaDTO obtenerResumen(@PathParam("id")Integer param){
         return this.service.obtenerResumen(param);     
     }
-}
     
+     @GET
+    @Path("{stock}")
+    public venta (@PathParam("stock")Integer param){
+        return this.service.obtener(param);    
+}
 
+    
+    @GET
+    @Path("{id}")
+    public Cliente obtener(@PathParam("id")Integer param){
+        return this.service.obtener(param);     
+    }
+
+
+    
+  }
